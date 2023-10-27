@@ -13,7 +13,7 @@ Route::post('/roles', [RolesController::class, 'store']);  // Crear un nuevo rol
 Route::put('/roles/{id}', [RolesController::class, 'update']);  // Actualizar un rol por ID
 
 // Rutas para el controlador UsersController
-Route::get('/users', [UsersController::class, 'index']);  // Obtener todos los usuarios (incluyendo conductores)
+Route::get('/users', [UsersController::class, 'index']);
 Route::get('/users/{id}', [UsersController::class, 'show']);  // Obtener un usuario por ID
 Route::post('/users', [UsersController::class, 'store']);  // Crear un nuevo usuario (incluyendo conductores)
 Route::put('/users/{id}', [UsersController::class, 'update']);  // Actualizar un usuario por ID
